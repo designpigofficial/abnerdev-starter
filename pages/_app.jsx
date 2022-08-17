@@ -15,7 +15,12 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config, colors });
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
 function MyApp({ Component, pageProps }) {
