@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import ContactForm from "../components/ContactForm";
 
-function ContactPage() {
+function Contact() {
   return (
     <Box
       bg="transparent"
@@ -17,4 +17,4 @@ function ContactPage() {
   );
 }
 
-export default ContactPage;
+export default Contact;

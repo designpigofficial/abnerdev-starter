@@ -3,7 +3,6 @@ import {
   Box,
   Heading,
   Spacer,
-  HStack,
   Button,
   Drawer,
   DrawerOverlay,
@@ -12,6 +11,8 @@ import {
   DrawerFooter,
   DrawerCloseButton,
   DrawerBody,
+  Image,
+  Img,
   Input,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -31,8 +32,13 @@ export default function Header() {
         py="25px"
         gap="2"
       >
-        <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-          Open
+        <Button
+          ref={btnRef}
+          variation="outline"
+          colorScheme="pink"
+          onClick={onOpen}
+        >
+          |||
         </Button>
         <Drawer
           isOpen={isOpen}
@@ -43,10 +49,21 @@ export default function Header() {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader pt="25px">Abner Development</DrawerHeader>
 
-            <DrawerBody>
-              <HStack spacing="24px">
+            <DrawerBody mt="50%">
+              <Flex
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                textAlign="center"
+                spacing="24px"
+              >
+                <Box w="auto" h="80px" pe="20px">
+                  <Link href="/" passHref>
+                    <a>Home</a>
+                  </Link>
+                </Box>
                 <Box w="auto" h="80px" pe="20px">
                   <Link href="/about" passHref>
                     <a>About</a>
@@ -72,23 +89,21 @@ export default function Header() {
                     <a>Contact</a>
                   </Link>
                 </Box>
-              </HStack>
+              </Flex>
             </DrawerBody>
 
             <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
+              <Button colorScheme="blue">
+                <Link href="https://github.com/designpigofficial" passHref>
+                  <a target="_ blank">
+                    <Image src="/github.png" height="60%" alt="" />
+                  </a>
+                </Link>
               </Button>
-              <Button colorScheme="blue">Save</Button>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>
 
-        <Box p="2" h="85px" color="pink">
-          <Heading size="md" h="80px">
-            Abner Development
-          </Heading>
-        </Box>
         <Spacer />
       </Flex>
     </>
