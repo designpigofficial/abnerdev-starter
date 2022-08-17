@@ -11,7 +11,7 @@ export default function Header() {
         py="25px"
         gap="2"
       >
-        <Box p="2" h="85px">
+        <Box p="2" h="85px" color="pink">
           <Heading size="md" h="80px">
             Abner Development
           </Heading>
@@ -24,16 +24,24 @@ export default function Header() {
             </Link>
           </Box>
           <Box w="auto" h="80px" pe="20px">
-            Services
+            <Link href="/services" passHref>
+              <a>Services</a>
+            </Link>
           </Box>
           <Box w="auto" h="80px" pe="20px">
-            Technologies
+            <Link href="/technologies" passHref>
+              <a>Technologies</a>
+            </Link>
           </Box>
           <Box w="auto" h="80px" pe="20px">
-            Projects
+            <Link href="/projects" passHref>
+              <a>Projects</a>
+            </Link>
           </Box>
           <Box w="auto" h="80px" pe="20px">
-            Contact
+            <Link href="/contact" passHref>
+              <a>Contact</a>
+            </Link>
           </Box>
         </HStack>
       </Flex>
