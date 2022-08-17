@@ -31,9 +31,11 @@ function MyApp({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-W17N3GHCE3"
       ></Script>
       <Script>
+        {`
         window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-W17N3GHCE3');
+        `}
       </Script>
 
       <ChakraProvider theme={theme}>
