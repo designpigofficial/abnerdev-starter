@@ -1,9 +1,43 @@
+:root {
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #eee;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #bbb;
+  --gray-600: #666;
+  --gray-700: #444;
+  --gray-800: #222;
+  --gray-900: #212121;
+  --black: #000;
+  --blue: #2196F3;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #e51c23;
+  --orange: #fd7e14;
+  --yellow: #ff9800;
+  --green: #4CAF50;
+  --teal: #20c997;
+  --cyan: #9C27B0;
+  --primary: var(--pink);
+  --secondary: var(--blue);
+  --success: var(--green);
+  --info: var(--cyan);
+  --warning: var(--yellow);
+  --danger: var(--red);
+  --light: #f2f2f2;
+  --dark: #101010;
+  }
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--light);
+  background: var(--dark);
 }
 
 * {
@@ -32,4 +66,9 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
 }
