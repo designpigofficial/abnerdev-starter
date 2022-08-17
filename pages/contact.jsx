@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
+import ContactForm from "../components/ContactForm";
 
-function Contact() {
+function ContactPage() {
   return (
     <Box
       bg="transparent"
@@ -12,10 +13,8 @@ function Contact() {
       textAlign="center"
       p={0}
       color="white"
-    >
-      <p>contact</p>
-    </Box>
+    ></Box>
   );
 }
 
-export default Contact;
+export default ContactPage;
