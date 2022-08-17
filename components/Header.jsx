@@ -75,11 +75,6 @@ export default function Header() {
                   </Link>
                 </Box>
                 <Box w="auto" h="80px" pe="20px">
-                  <Link href="/technologies" passHref>
-                    <a>Technologies</a>
-                  </Link>
-                </Box>
-                <Box w="auto" h="80px" pe="20px">
                   <Link href="/projects" passHref>
                     <a>Projects</a>
                   </Link>
