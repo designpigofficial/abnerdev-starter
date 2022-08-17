@@ -7,6 +7,9 @@
     "build": "next build",
     "export": "next export"
   },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11",
@@ -19,6 +22,8 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.16.0"
+    "@netlify/plugin-nextjs": "^4.16.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
   }
 }
